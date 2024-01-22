@@ -1,8 +1,28 @@
-
+import { useState } from 'react';
+ 
+ 
  // Square function
-function Square({ value }) {
-  return <button className="square">{value}</button>;
+
+ function Square({ value }) {
+  
+  //Click Function
+
+  function handleClick() {
+    console.log('clicked!');
+  }
+
+  return (
+    <button
+      className="square"
+      onClick={handleClick}
+    >
+      {value}
+    </button>
+  );
 }
+
+
+
  
  
  //Builds Board
