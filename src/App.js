@@ -1,14 +1,14 @@
 import { useState } from 'react';
- 
- 
- // Square function
 
- function Square() {
+
+
+// Square Fucntion
+
+function Square() {
   const [value, setValue] = useState(null);
 
-  
-  //Click Function
 
+  // Function to set square to X
   function handleClick() {
     setValue('X');
   }
@@ -23,13 +23,8 @@ import { useState } from 'react';
   );
 }
 
-
-
- 
- 
- //Builds Board
-
- export default function Board() {
+// Builds the Board
+export default function Board() {
   return (
     <>
       <div className="board-row">
