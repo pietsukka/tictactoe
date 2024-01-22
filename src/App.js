@@ -10,7 +10,7 @@ import { useState } from 'react';
   //Click Function
 
   function handleClick() {
-    console.log('X');
+    setValue('X');
   }
 
   return (
